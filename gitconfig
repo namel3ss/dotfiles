@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[user]
+	name = Martin Mihaylov
+	email = martin.mihaylov@code-runners.com
+[core]
+	excludesfile = ~/.gitignore
