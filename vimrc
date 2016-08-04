@@ -1,6 +1,5 @@
 nnoremap s :w<CR>
 
-
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
 
@@ -31,7 +30,7 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-repeat'
-NeoBundle 'garbas/vim-snipmate'
+" NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'skalnik/vim-vroom'
@@ -82,3 +81,11 @@ autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>"
 
 " NERDTree
 let g:NERDTreeWinPos = "right"
+
+" Moving lines up and down
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv

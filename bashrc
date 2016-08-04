@@ -121,3 +121,6 @@ alias gvim="gvim 2>/dev/null"
 
 # Exercism
 export PATH="$HOME/exercism/bin:$PATH"
+
+# NodeJS
+export PATH="/usr/bin/nodejs:$PATH"
