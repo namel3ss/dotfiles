@@ -124,3 +124,6 @@ export PATH="$HOME/exercism/bin:$PATH"
 
 # NodeJS
 export PATH="/usr/bin/nodejs:$PATH"
+
+#AWSCLI
+export PATH=~/.local/bin:$PATH

@@ -36,6 +36,8 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'skalnik/vim-vroom'
 NeoBundle 'godlygeek/csapprox'
 NeoBundle 'ntpeters/vim-better-whitespace'
+NeoBundle 'evidens/vim-twig'
+NeoBundle 'mxw/vim-jsx'
 
 " Themes
 NeoBundle 'duythinht/inori'
@@ -89,3 +91,15 @@ inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" Rename files
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>r :call RenameFile()<cr>
