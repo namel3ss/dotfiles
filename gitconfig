@@ -2,6 +2,7 @@
 	ui = true
 [user]
 	name = Martin Mihaylov
-	email = martin.mihaylov@code-runners.com
+	email = martin@indigoverge.com
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/local/bin/vim
