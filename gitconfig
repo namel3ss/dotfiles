@@ -2,7 +2,8 @@
 	ui = true
 [user]
 	name = Martin Mihaylov
-	email = martin@indigoverge.com
+	email = namel3ssone@gmail.com
+	signingkey = B23D902C9F1D7AD4
 [core]
 	excludesfile = ~/.gitignore
 	editor = /usr/local/bin/vim
