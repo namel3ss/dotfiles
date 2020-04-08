@@ -19,26 +19,35 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/nerdtree'
+
+" Coding related
 NeoBundle 'ervandew/supertab'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-repeat'
-" NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'skalnik/vim-vroom'
-NeoBundle 'godlygeek/csapprox'
-NeoBundle 'ntpeters/vim-better-whitespace'
-NeoBundle 'evidens/vim-twig'
+NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'martinda/Jenkinsfile-vim-syntax'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'mxw/vim-jsx'
-NeoBundle 'eshion/vim-sftp-sync'
+NeoBundle 'evidens/vim-twig'
+NeoBundle 'ntpeters/vim-better-whitespace'
+NeoBundle 'skalnik/vim-vroom'
+
+" Git and File management
+NeoBundle 'junegunn/fzf'
+NeoBundle 'junegunn/fzf.vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-eunuch'
+"NeoBundle 'ctrlpvim/ctrlp.vim'
+
+" Vim related
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'godlygeek/csapprox'
+
+" NeoBundle 'garbas/vim-snipmate'
+"NeoBundle 'honza/vim-snippets'
+"NeoBundle 'tpope/vim-surround'
 
 " Themes
 NeoBundle 'duythinht/inori'
@@ -126,3 +135,16 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn=join(range(81,81),",")
 
 set ruler
+
+" Fzf <3
+nnoremap <C-p> :Files<cr>
+
+" TComment
+nnoremap <leader>c :TComment<cr>
+
+" Ctrlp
+" let g:ctrlp_show_hidden = 1
+" let g:ctrlp_custom_ignore = {
+"   \ 'dir':  '\v[\/]((\.(git|hg|svn))|vendor\/cache|node_modules)$',
+"   \ 'file': '\v\.(exe|so|dll|gem)$',
+"   \ }
