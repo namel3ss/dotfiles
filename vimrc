@@ -19,7 +19,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-
 " Coding related
 NeoBundle 'ervandew/supertab'
 NeoBundle 'scrooloose/syntastic'
@@ -38,14 +37,13 @@ NeoBundle 'junegunn/fzf'
 NeoBundle 'junegunn/fzf.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-eunuch'
-"NeoBundle 'ctrlpvim/ctrlp.vim'
 
 " Vim related
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'godlygeek/csapprox'
 
-" NeoBundle 'garbas/vim-snipmate'
+"NeoBundle 'garbas/vim-snipmate'
 "NeoBundle 'honza/vim-snippets'
 "NeoBundle 'tpope/vim-surround'
 
@@ -53,8 +51,11 @@ NeoBundle 'godlygeek/csapprox'
 NeoBundle 'duythinht/inori'
 NeoBundle 'xero/sourcerer.vim'
 NeoBundle 'glortho/feral-vim'
-NeoBundle 'aradunovic/perun.vim'
 NeoBundle 'kaicataldo/material.vim'
+NeoBundle 'reedes/vim-colors-pencil'
+
+" Goodies
+NeoBundle 'sotte/presenting.vim'
 
 call neobundle#end()
 
@@ -84,7 +85,7 @@ syntax enable
 
 " Theme
 set background=dark
-colorscheme perun
+colorscheme pencil
 set noswapfile
 
 " Invisible characters and end of lines
