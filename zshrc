@@ -40,7 +40,12 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 
 export ANSIBLE_NOCOWS=1
 
+function supress-rspec() {
+  rspec "$@" 2> /dev/null
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
