@@ -13,6 +13,6 @@ To setup the dotfiles, use:
 cd dotfiles
 stow .
 ```
-The dotfiles will be linked under `~/` follwoign the same structure in the repo.
+The dotfiles will be linked under `~/` following the same structure in the repo.
 
 Restart you terminal and enjoy using them.
